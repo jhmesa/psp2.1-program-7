@@ -76,8 +76,9 @@ public final class Measuring {
 	
 	/**
 	 * Calculate the t distribution with  Simpson's rule
+	 * @param x value of the x
 	 * @param dof value of degrees of freedom
-	 * @param w value of the w
+	 * @return integralVal Value of the integration of the t distribution with the rule of simpsons. 
 	 */
 	public static double calculateIntegrationTDistWithSimpsRuleValue(double x, double dof){
 		double w = x/30;
@@ -111,7 +112,8 @@ public final class Measuring {
 	
 	/**
 	 * Calculate of x value
-	 * @param data the object containing the values to make the calculations
+	 * @param dof the value of the degrees of freedom
+	 * @param p the value of the p
 	 * @return x value for the values of dof and p
 	 */
 	public static double calculateX(double dof, double p){

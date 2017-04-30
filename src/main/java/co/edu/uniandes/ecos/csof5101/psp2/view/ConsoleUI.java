@@ -52,7 +52,6 @@ public class ConsoleUI {
 				BufferedReader br =  new BufferedReader(new FileReader(path));
 				String line = br.readLine();
 				while (null != line) {
-					System.out.println(line);
 					String[]tokens = line.split(",");
 					data.getDataXList().add(Double.valueOf(tokens[0]));
 					data.getDataYList().add(Double.valueOf(tokens[1]));

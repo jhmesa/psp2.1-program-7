@@ -1,1 +1,1 @@
-web:    java -jar target/program6.jar
+web:    java -jar target/program7.jar
