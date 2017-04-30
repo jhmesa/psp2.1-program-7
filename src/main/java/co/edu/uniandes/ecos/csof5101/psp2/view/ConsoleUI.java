@@ -49,7 +49,7 @@ public class ConsoleUI {
 			System.out.println("Path is empty!!");
 		} else {
 			try {
-				BufferedReader br =  new BufferedReader(new FileReader(path));
+				BufferedReader br =  new BufferedReader(new FileReader("./src/main/resources/" + path));
 				String line = br.readLine();
 				while (null != line) {
 					String[]tokens = line.split(",");
